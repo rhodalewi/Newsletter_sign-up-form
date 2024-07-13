@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+    font-size: 10px;
+    min-height: 100vh;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2.5rem;
+}
+
+#right-section {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 1.75rem;
+}
+
+#left-section {
+    padding: 0 1rem 0 2rem;
+}
+
+.mainH1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.mainP {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.lists p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.lists {
+    display: flex;
+    margin-top: 0.75rem;
+    align-items: flex-start;
+}
+
+#myForm {
+    margin-top: 2rem
+}
+
+label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.email-input {
+    width: 318px;
+    height: 44px;
+    border-radius: 8px;
+    padding-left: 1.5rem;
+    border: 1px solid hsl(225, 12%, 80%);
+    margin-top: 0.5rem;
+    font-family: 'Roboto';
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1.25rem;
+}
+
+input::placeholder {
+    color: hsl(231, 7%, 60%);
+    font-size: 14px;
+}
+
+input.errors {
+    border: 1.5px solid hsl(0, 100%, 74%);
+    background-color: hsl(0, 100%, 94%);
+}
+
+.errorMessage {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.email {
+    display: flex;
+    width: 316px;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 20px 74px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-image: linear-gradient(to right, hsl(346, 100%, 66%), hsl(15, 100%, 61%));
+    box-shadow: 0px 8px 16px 2px hsl(4, 100%, 67%);
+} 
+
+
+/* SUCCESS STATE */
+#successContainer {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(234, 29%, 20%);
+    height: 100vh;
+    padding: 5rem 1.6rem 8rem 2rem ;
+    font-family: "Roboto";
+    display: grid;
+}
+
+.successH1 {
+    font-size: 40px;
+    margin-top: 2rem;
+    font-weight: 900;
+}
+
+.successP {
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.successBtn {
+    padding: 18px 92px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Roboto';
+    cursor: pointer;
+    margin-top: 11rem;
+}
+
+.successBtn:hover,
+.successBtn:active {
+    background-image: linear-gradient(to right, hsl(346, 100%, 66%), hsl(15, 100%, 61%));
+    box-shadow: 0px 8px 16px 2px hsl(4, 100%, 67%);
+} 
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    font-size: 16px;
+}
+.attribution a { 
+    /* color: #FF5E5E #FF9049 #FFB443 #FF9F2E #FF3E83 #FF527B #FF6A3A hsl(4, 100%, 67%); */
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* DESKTOP RESPONSIVENESS */
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(234, 29%, 20%);
+    }
+
+    #mainContainer {
+        background-color: hsl(0, 0%, 100%);
+        flex-direction: row;
+        height: 460px;
+        width: 672px;
+        border-radius: 28px;
+        justify-content: space-between;
+    }
+
+    #right-section {
+        background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 306px;
+        height: 428px;
+        margin-top: 1rem;
+    }
+
+    #left-section {
+        width: 340px;
+        padding-top: 3.5rem;
+        padding-left: 2.6rem;
+    }
+
+    .mainP {
+        font-size: 12px;
+    }
+
+    .list p {
+        font-size: 12px;
+        padding-left: 0.75rem;
+    }
+
+    .lists {
+        margin-top: 0.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .lists img {
+        width: 16px;
+        height: 16px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    .email-input  {
+        width: 280px;
+        height: 40px;
+        padding-left: 1rem;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    .email {
+        width: 276px;
+    }
+
+    .btn {
+        padding: 15px 54px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    /* SUCCESS STATE */
+    #successContainer {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 28px;
+        color: hsl(234, 29%, 20%);
+        height: 400px;
+        width: 380px;
+        padding: 2rem 3rem;
+    }
+
+    #successContainer img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .successH1 {
+        font-size: 36px;
+    }
+    
+    .successP {
+        font-size: 12px;
+        line-height: 1.25rem;
+        font-weight: 500;
+    }
+    
+    strong {
+        font-weight: 900;
+    }
+
+    .successBtn {
+        padding: 14px 92px;
+        font-size: 12px;
+        font-weight: 400;  
+        margin-top: 1.75rem;
+    }
+} 
