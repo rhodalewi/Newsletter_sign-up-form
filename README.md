@@ -1,4 +1,4 @@
-# Newsletter sign-up form with success message solution
+# Newsletter sign-up form with success message
   ## Overview
   This project implements a simple newsletter sign-up form with a success message. Users can enter their email address and 
 submit the form. Upon successful submission, the form disappears and a message thanking the user and displaying their email 
