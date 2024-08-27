@@ -169,7 +169,6 @@ input.errors {
     font-size: 16px;
 }
 .attribution a { 
-    /* color: #FF5E5E #FF9049 #FFB443 #FF9F2E #FF3E83 #FF527B #FF6A3A hsl(4, 100%, 67%); */
     color: hsl(228, 45%, 44%); 
 }
 
@@ -255,7 +254,7 @@ input.errors {
         font-weight: 400;
     }
 
-    /* SUCCESS STATE */
+/* SUCCESS STATE */
     #successContainer {
         background-color: hsl(0, 0%, 100%);
         border-radius: 28px;

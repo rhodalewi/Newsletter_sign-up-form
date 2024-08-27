@@ -13,8 +13,7 @@ form.addEventListener('submit', (event) => {
         email.classList.add('errors');
         errorMsg.style.display = "block"
         email.style.color = 'red';
-    } 
-    else {
+    } else {
         email.classList.remove('errors');
         mainCon.style.display = 'none';
         successCon.style.display='block';
