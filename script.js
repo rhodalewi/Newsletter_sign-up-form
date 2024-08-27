@@ -4,10 +4,13 @@ const errorMsg = document.querySelector('.errorMessage');
 const button = document.querySelector('.successBtn');
 const mainCon = document.getElementById('mainContainer');
 const successCon = document.getElementById('successContainer');
+const emailUser = document.querySelector('.uservalue');
 
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    const userEmail = email.value;
 
     if  (!email.value.match(/^(?!\s*$)([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/) || email === '') {
         email.classList.add('errors');
@@ -17,7 +20,8 @@ form.addEventListener('submit', (event) => {
         email.classList.remove('errors');
         mainCon.style.display = 'none';
         successCon.style.display='block';
-        errorMsg.style.display = "none"
+        emailUser.textContent = userEmail;
+        errorMsg.style.display = "none";
     }
 })
 
@@ -31,6 +35,7 @@ button.addEventListener('click', (event) => {
         location.reload();
     }
 });
+
 
 //VALIDATE EMAIL
 /* function validateEmail(email) {
