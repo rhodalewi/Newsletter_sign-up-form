@@ -92,6 +92,7 @@ input.errors {
     color: hsl(0, 100%, 74%);
     font-size: 12px;
     font-weight: 900;
+    display: none;
 }
 
 .email {
@@ -126,7 +127,7 @@ input.errors {
     height: 100vh;
     padding: 5rem 1.6rem 8rem 2rem ;
     font-family: "Roboto";
-    display: grid;
+    display: none;
 }
 
 .successH1 {
@@ -227,6 +228,10 @@ input.errors {
     }
 
     label {
+        font-size: 11px;
+    }
+
+    .errorMessage {
         font-size: 11px;
     }
 
